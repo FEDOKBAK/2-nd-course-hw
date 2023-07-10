@@ -1,0 +1,45 @@
+@media (max-width: 767px) {
+
+  .center {
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+
+  .top {
+    height: 735px;
+  }
+
+  .top_content {
+    width: 343px;
+  }
+
+  .top_text {
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .top_text-desc {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .top_text-desc-bold {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .top_button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+
+  
+  .select_game_one {
+    width: 343px;
+  }
+}
