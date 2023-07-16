@@ -37,9 +37,52 @@
     transform: translate(-50%, 0);
   }
 
-
   
   .select_game_one {
     width: 343px;
+    height: 300px;
   }
+
+  .for {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .for_desc {
+    grid-column: span 4;
+    margin-top: 51px;
+    width: 343px;
+  }
+
+  .for_desc-main {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .for_desc-desc {
+    text-align: center;
+    line-height: 22px;
+    letter-spacing: 0px;
+  }
+
+  .for_button {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .for_img {
+    margin-top: 64px;
+  }
+
+  .for_img-desc {
+    width: 344px;
+  }
+
+
 }

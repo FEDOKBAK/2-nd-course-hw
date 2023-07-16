@@ -22,7 +22,6 @@ body {
 }
 
 .top_text {
-  font-family: Montserrat;
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
@@ -33,7 +32,6 @@ body {
 }
 
 .top_text-desc {
-font-family: Montserrat;
 font-size: 18px;
 font-weight: 300;
 line-height: 32px;
@@ -44,7 +42,6 @@ max-width: 480px;
 }
 
 .top_text-desc-bold {
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
@@ -68,6 +65,11 @@ max-width: 480px;
   color: #FFFFFF;
 }
 
+.top_button:hover {
+  cursor: pointer;
+  background-color: #fc5050;
+}
+
 .top_button-push {
   padding-top: 44px;
 }
@@ -89,6 +91,77 @@ max-width: 480px;
 
 .select_game_one {
   width: 379px;
+}
+
+.select_game_one:hover {
+  transform: scale(1.05);
+  stroke: #1acefc;
+  cursor: pointer;
+}
+
+.for {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/background3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 135px;
+}
+
+.for_desc {
+  width: 584px;
+  margin-top: 282px;
+}
+
+.for_desc-main {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.for_desc-desc {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FFFFFF;
+  padding-top: 32px;
+}
+
+.for_button {
+  border: none;
+  box-sizing: border-box;
+  background-color: #9C0332;
+  width: 234px;
+  height: 49px;
+  border-radius: 30px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+.for_button:hover {
+  cursor: pointer;
+  background-color: #fc5050;
+}
+
+
+
+.for_button-push {
+  padding-top: 32px;
+}
+
+.for_img {
+  margin-top: 234px;
 }
 
 @import 'mobile';
