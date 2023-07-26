@@ -265,9 +265,15 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
   }
+  .select_game {
+    justify-content: center;
+  }
   .select_game_one {
     width: 343px;
     height: 300px;
+  }
+  .select_game_one_img {
+    width: 100%;
   }
   .for {
     display: grid;
@@ -279,6 +285,8 @@ body {
     grid-column: span 4;
     margin-top: 51px;
     width: 343px;
+    display: flex;
+    flex-direction: column;
   }
   .for_desc-main {
     font-size: 32px;
@@ -302,9 +310,10 @@ body {
   }
   .for_img {
     margin-top: 64px;
+    width: 344px;
   }
   .for_img-desc {
-    width: 344px;
+    width: 100%;
   }
   .bottom_text {
     font-size: 32px;
