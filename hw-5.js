@@ -120,7 +120,6 @@ console.log(circle1.gerPerimeter());
 console.log(circle2.getArea());
 console.log(circle2.gerPerimeter());*/
 
-
 //Задание 8
 
 function seasons() {
