@@ -3,8 +3,8 @@
 /*const numbs = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < numbs.length; i++) {
-	if (numbs[i] == 10) break;
 	console.log(numbs[i]);
+  if (numbs[i] == 10) break;
 }*/
 
 //Задание 2
@@ -90,20 +90,14 @@ console.log(result);*/
 
 //Задание 12 
 
-/*const array = (['слово', '', 'слог', 'длинное предложение', 'буква'])
+/*const arr12 = ["слово", "", "слог", "длинное предложение", "буква"];
 
-const calcLength = array => {
-  const map = new Map()
+const getLengthWords = function (arr) {
+  let lengthArr = arr.map(el => el.length);
+  return lengthArr;
+};
 
-  for (let str of array) {
-    map.set(str, `длина слова: ${str.replace(/[^а-я]/gi, "").length}`)
-  }
-  return [...map.values()]
-}
-
-const result = calcLength(array)
-
-console.log(result)*/
+console.log(getLengthWords(arr12));*/
 
 //Задание 13
 

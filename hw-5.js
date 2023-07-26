@@ -25,7 +25,7 @@ console.log(num(4));*/
 //Задание 3.1
 
 /*function number(num) {
-  num * num;
+  console.log(num*num);
 }
 
 console.log(number(2));*/
@@ -44,22 +44,28 @@ console.log(number(2));*/
 
 if (age < 0 ) {
   function printMessage() {
-    console.log(`Вы ввели неправильное значение`);
+    alert(`Вы ввели неправильное значение`);
   }
-}
+};
+
 if (age <= 12) {
   function printMessage() {
-    console.log(`Привет, друг!`);
+    alert(`Привет, друг!`);
   } 
-} else {
-  console.log(`Добро пожаловать!`);
-}
+}; 
+
+if (age > 13) {
+  function printMessage() {
+  alert(`Добро пожаловать!`);
+  }
+};
 
 printMessage();*/
 
+
 //Задание 5
 
-/*let mult = (a = prompt('Введите первое число'), b = prompt ('Введите второе число'));
+/*let mult = (a, b);
 
 function mult() {
   if (isNaN (a) || isNaN (b)) {
@@ -69,7 +75,10 @@ function mult() {
   }
 }
 
-mult();*/
+const a = prompt('Введите первое число')
+const b = prompt('Введите второечисло')
+mult(a, b);*/
+
 
 //Задание 6
 
@@ -86,48 +95,49 @@ squaring();*/
 //Задание 7
 
 /*function getCircleArea() {
-  return (this.radius * this.radius * 3.14) ;
+  return 3.14 * this.radius**2;
 }
 
 function getCirclePerimeter() {
-  return (2 * 3.14 * this.radius);
+  return 2 * 3.14 * this.radius;
 }
 
 const circle1 = {
   radius: 10,
   getArea: getCircleArea,
-  getPerimeter: getCirclePerimeter
-}
+  gerPerimeter: getCirclePerimeter,
+};
 
 const circle2 = {
   radius: 12,
   getArea: getCircleArea,
-  getPerimeter: getCirclePerimeter
-}
+  gerPerimeter: getCirclePerimeter,
+};
 
-console.log(circle1.gerArea());
-console.log(circle2.getPerimeter());*/
+console.log(circle1.getArea());
+console.log(circle1.gerPerimeter());
 
-
+console.log(circle2.getArea());
+console.log(circle2.gerPerimeter());*/
 
 //Задание 8
 
-/*function seasons() {
+function seasons() {
   let answer = prompt('Введите номер месяца от 1 до 12');
 
-  if (answer = 12 || (answer >= 1 && answer <=2)) {
+  if (answer == 12 || answer == 1 || answer == 2) {
     alert (`Зима`);
   } 
-  else if (answer >= 3 && answer <=5) {
+  else if (answer == 3 || answer == 4 || answer == 5) {
     alert (`Весна`);
   }
-  else if (answer >= 6 && answer <=8) {
+  else if (answer == 6 || answer == 7 || answer == 8) {
     alert (`Лето`);
   }
-  else if (answer >= 9 && answer <=11) {
+  else if (answer == 9 || answer == 10 || answer == 11) {
     alert (`Осень`);
   }
   else {
     alert (`Такого месяца нет`);
   }
-}*/
+}
