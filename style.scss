@@ -105,14 +105,28 @@ max-width: 480px;
   background-position: center;
   background-size: cover;
   height: 800px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 135px;
+  display: flex;
+  column-gap: 135px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.for_remember {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/background3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 135px;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .for_desc {
   width: 584px;
-  margin-top: 282px;
 }
 
 .for_desc-main {
@@ -161,7 +175,7 @@ max-width: 480px;
 }
 
 .for_img {
-  margin-top: 234px;
+  
 }
 
 .bottom {

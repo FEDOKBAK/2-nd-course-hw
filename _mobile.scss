@@ -37,17 +37,28 @@
     transform: translate(-50%, 0);
   }
 
+  .select_game {
+    justify-content: center;
+  }
   
   .select_game_one {
     width: 343px;
     height: 300px;
   }
 
+  .select_game_one_img  {
+    width: 100%;
+  }
+
+
   .for {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: 16px;
-    padding-right: 16px;
+    justify-content: center;
+    align-items: normal;
+  }
+
+  .for_remember {
+    justify-content: center;
+    align-items: normal;
   }
 
   .for_desc {
@@ -83,7 +94,11 @@
     margin-top: 64px;
   }
 
-  .for_img-desc {
+  .for_img-desc-one {
+    width: 344px;
+  }
+
+  .for_img-desc-two {
     width: 344px;
   }
 

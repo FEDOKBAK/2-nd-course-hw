@@ -105,14 +105,30 @@ body {
   background-position: center;
   background-size: cover;
   height: 800px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 135px;
+  display: flex;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.for_remember {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(img/background3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .for_desc {
   width: 584px;
-  margin-top: 282px;
 }
 
 .for_desc-main {
@@ -156,10 +172,6 @@ body {
 
 .for_button-push {
   padding-top: 32px;
-}
-
-.for_img {
-  margin-top: 234px;
 }
 
 .bottom {
@@ -265,15 +277,23 @@ body {
     left: 50%;
     transform: translate(-50%, 0);
   }
+  .select_game {
+    justify-content: center;
+  }
   .select_game_one {
     width: 343px;
     height: 300px;
   }
+  .select_game_one_img {
+    width: 100%;
+  }
   .for {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: 16px;
-    padding-right: 16px;
+    justify-content: center;
+    align-items: normal;
+  }
+  .for_remember {
+    justify-content: center;
+    align-items: normal;
   }
   .for_desc {
     grid-column: span 4;
@@ -303,7 +323,10 @@ body {
   .for_img {
     margin-top: 64px;
   }
-  .for_img-desc {
+  .for_img-desc-one {
+    width: 344px;
+  }
+  .for_img-desc-two {
     width: 344px;
   }
   .bottom_text {
