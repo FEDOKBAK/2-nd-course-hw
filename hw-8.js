@@ -12,34 +12,33 @@ console.log(people.sort();*/
 
 //Задание 2 
 
-/*function isPositive(el) {
-if (el > 0) {
-  return el
+function isPositive(num) {
+  return num >= 0;
 }
-}
-function isMale(el) {
-  if (el.gender === `male`) {
-    return el
-  }
+
+function isMale(item) {
+  return item.gender === 'male';
 }
 function filter(arr, ruleFunction) {
   const result = [];
   for (let i = 0; i < arr.length; i++) {
     if (ruleFunction(arr[i]))
-    result.push ((ruleFunction(arr[i])));
+      result.push((ruleFunction(arr[i])));
   }
+
+  return result;
 }
 
 console.log(filter([3, -4, 1, 9], isPositive));
 
 const people = [
-    {name: 'Глеб', gender: 'male'},
-    {name: 'Анна', gender: 'female'},
-    {name: 'Олег', gender: 'male'},
-    {name: 'Оксана', gender: 'female'}
+  { name: 'Глеб', gender: 'male' },
+  { name: 'Анна', gender: 'female' },
+  { name: 'Олег', gender: 'male' },
+  { name: 'Оксана', gender: 'female' }
 ];
 
-console.log(filter(people, isMale));*/
+console.log(filter(people, isMale));
 
 //Задание 3
 
@@ -63,18 +62,18 @@ delayForSecond(function () {
 
 //Задание 5
 
-// Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
+// Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда»,
 // а затем вызывает переданный колбэк
-function delayForSecond(cb) {
+/*function delayForSecond(cb) {
   setTimeout(() => {
-      console.log('Прошла одна секунда');
-      if(cb) { 	cb(); }
+    console.log('Прошла одна секунда');
+    if (cb) { cb(); }
 
   }, 1000)
 }
 
 // Функция sayHi выводит в консоль приветствие для указанного имени
-function sayHi (name) {
+function sayHi(name) {
   console.log(`Привет, ${name}!`);
 }
 
@@ -82,4 +81,4 @@ function sayHi (name) {
 
 // Нужно изменить код ниже:
 
-delayForSecond((cb) => sayHi('Глеб'));
+delayForSecond((cb) => sayHi('Глеб'));*/
