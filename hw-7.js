@@ -34,7 +34,7 @@ console.log(maxValue);*/
 //Задание 5
 
 /*function getRandomInt(minValue, maxValue) {
-  return Math.round (Math.random() * (maxValue - minValue));
+  return Math.round (Math.random() * (maxValue - minValue)) + minValue;
 }
 console.log(getRandomInt(1, 10));*/
 
@@ -53,10 +53,9 @@ console.log(getRandomInt(1, 10));*/
 
 //Задание 7 
 
-/*function getRandomInt(minValue, maxValue) {
-  return Math.round(Math.random() * maxValue);
-}
-console.log(getRandomInt(0, 5));*/
+/*const first = +prompt('Введите первое число');
+const second = +prompt('Введите второе число');
+console.log(Math.round(Math.random() * (second - first)) + first);*/
 
 //Задание 8
 
@@ -78,7 +77,7 @@ const firstDate = (currentDate) => {
   let date = currentDate.getDate();
   if (date < 10) (date = '0' + date);
 
-  let month = months[currentDate.getMonth() - 1];
+  let month = months[currentDate.getMonth()];
 
   let day = days[currentDate.getDay()];
 
@@ -97,7 +96,7 @@ const firstDate = (currentDate) => {
 
 //Задание 11
 
-function gameFructs() {
+/*function gameFructs() {
   const fructs = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
   let list = fructs.sort(() => Math.random() - 0.5);
@@ -119,7 +118,7 @@ function gameFructs() {
   } else {
       alert(`Неверно`);
   }
-}
+}*/
 
 
 
